@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+:root {
+  --font-para: 16px;
+  --color-paleBlue: hsl(225, 100%, 94%);
+  --color-brightBlue: hsl(245, 75%, 52%);
+  --color-veryPaleBlue: hsl(225, 100%, 98%);
+  --color-desaturatedBlue: hsl(224, 23%, 55%);
+  --color-darkBlue: hsl(223, 47%, 23%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  max-width: 1440px;
+  background-color: var(--color-paleBlue);
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+/* Main-Container */
+.container {
+  background-color: #fff;
+  text-align: center;
+  width: 320px;
+  border-radius: 20px;
+}
+
+.hero img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.order {
+  font-weight: 900;
+  font-size: larger;
+  color: var(--color-darkBlue);
+  padding: 20px 0;
+}
+
+.description {
+  color: var(--color-desaturatedBlue);
+  font-size: 15px;
+  line-height: 25px;
+  padding: 10px 30px;
+}
+
+.plans-container {
+  display: flex;
+  gap: 15px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-veryPaleBlue);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.annual-plan :nth-child(1) {
+  font-weight: 700;
+  color: var(--color-darkBlue);
+}
+
+.annual-plan :nth-child(2) {
+  font-size: 14px;
+  color: var(--color-desaturatedBlue);
+}
+
+.change a {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.payment {
+  background-color: var(--color-brightBlue);
+  color: #fff;
+  margin: 20px 20px;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 15px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.order-cancel {
+  font-size: 15px;
+  color: var(--color-desaturatedBlue);
+  padding: 10px;
+  margin: 15px;
+  font-weight: 700;
+}
+
